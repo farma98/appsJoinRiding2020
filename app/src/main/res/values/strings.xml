@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Join Riding</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="token">726004312516-1t2fkkc2i00r43egqrk5vuaouu7isgog.apps.googleusercontent.com</string>
+    <string name="map_box_access_token">pk.eyJ1IjoibWFoZnVkcHJhc2V0eW8iLCJhIjoiY2tiYXoyMzByMG1wcTJycGdtcms2dGN2NiJ9.KKCrYckZ-y-Uo2FQx6L6vg</string>
+</resources>

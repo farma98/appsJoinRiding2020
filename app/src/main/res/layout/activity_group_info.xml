@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GroupInfoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp">
+
+            <ImageView
+                android:id="@+id/groupIconTv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"/>
+
+            <TextView
+                android:id="@+id/groupDescriptionTv"
+                android:layout_above="@id/createdByTv"
+                android:background="#54000000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Deskripsi Grup"
+                android:padding="5dp"
+                android:textColor="@color/colorWhite"/>
+
+            <TextView
+                android:id="@+id/createdByTv"
+                android:background="#54000000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dibuat Oleh"
+                android:layout_alignParentBottom="true"
+                android:padding="5dp"
+                android:textColor="@color/colorWhite"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/editGroupTv"
+            android:drawableStart="@drawable/icon_edit_grey"
+            android:drawableTint="@color/colorBlack"
+            android:gravity="center_vertical"
+            android:drawablePadding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edit Grup"
+            android:padding="5dp"
+            android:textColor="@color/colorBlack"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#eee"/>
+        <TextView
+            android:id="@+id/addUserTv"
+            android:drawableStart="@drawable/icon_user_add_grey"
+            android:drawableTint="@color/colorBlack"
+            android:gravity="center_vertical"
+            android:drawablePadding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tambah Anggota Grup"
+            android:padding="5dp"
+            android:textColor="@color/colorBlack"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#eee"/>
+        <TextView
+            android:id="@+id/leaveGroupTv"
+            android:drawableStart="@drawable/icon_logout_grey"
+            android:drawableTint="@color/colorBlack"
+            android:gravity="center_vertical"
+            android:drawablePadding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Keluar Grup"
+            android:padding="5dp"
+            android:textColor="@color/colorBlack"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#eee"/>
+        <TextView
+            android:id="@+id/userGroupTv"
+            android:drawableStart="@drawable/icon_group_grey"
+            android:drawableTint="@color/colorBlack"
+            android:gravity="center_vertical"
+            android:drawablePadding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Daftar Anggota (N)"
+            android:padding="5dp"
+            android:textColor="@color/colorBlack"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewUserList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/row_user_add"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_logout"
+        android:title="Logout"
+        android:icon="@drawable/icon_logout_grey">
+    </item>
+
+    <item
+        android:id="@+id/action_settings"
+        android:title="Setting"
+        android:icon="@drawable/icon_setting_grey">
+    </item>
+
+    <item
+        android:id="@+id/action_search"
+        android:title="Search"
+        android:icon="@drawable/icon_search_white"
+        app:showAsAction="always"
+        app:actionViewClass="android.widget.SearchView">
+    </item>
+
+    <item
+        android:id="@+id/action_add_post"
+        android:title="Add Post"
+        app:showAsAction="always"
+        android:icon="@drawable/icon_add_post_white">
+    </item>
+
+    <item
+        android:id="@+id/action_create_group"
+        android:title="Create Group"
+        app:showAsAction="always"
+        android:icon="@drawable/icon_create_group_white">
+    </item>
+
+    <item
+        android:id="@+id/action_add_user"
+        android:title="Add User Group"
+        app:showAsAction="always"
+        android:icon="@drawable/icon_user_add_white">
+    </item>
+
+    <item
+        android:id="@+id/action_group_info"
+        android:title="Group Info"
+        app:showAsAction="always"
+        android:icon="@drawable/icon_info_group_white">
+    </item>
+
+    <item
+        android:id="@+id/action_notification"
+        android:title="Notification"
+        app:showAsAction="always"
+        app:actionLayout="@layout/menu_action_item_badge"
+        android:icon="@drawable/icon_notification_white">
+    </item>
+
+</menu>

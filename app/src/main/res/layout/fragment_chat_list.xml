@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.ChatsListFragment">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    android:id="@+id/swipeRefresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <!-- TODO: Update blank fragment layout -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewChatList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:listitem="@layout/row_chat_list_user"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+        </ScrollView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/floatingActionMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="25dp"
+        android:layout_marginEnd="16dp"
+        app:menu_showShadow="true"
+        app:menu_fab_label=""
+        app:menu_openDirection="up"
+        app:menu_backgroundColor="@android:color/transparent"
+        app:menu_labels_textColor="@color/colorWhite"
+        app:menu_labels_colorNormal="@color/colorBlack"
+        app:menu_colorPressed="@color/colorAccent">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/floatingChat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_label="Daftar User"
+            app:fab_size="mini"
+            android:src="@drawable/icon_chat_user_white"/>
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/floatingGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_label="Daftar Grup"
+            app:fab_size="mini"
+            android:src="@drawable/icon_group_white"
+            app:rippleColor="@color/colorPrimary"/>
+    </com.github.clans.fab.FloatingActionMenu>
+</RelativeLayout>

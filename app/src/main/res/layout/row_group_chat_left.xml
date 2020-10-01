@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="100dp"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/bg_chat_receiver"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/nameChatUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:text="Nama"/>
+
+    <TextView
+        android:id="@+id/messageUserChat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="Pesan"
+        android:textColor="@color/colorBlack"/>
+
+    <ImageView
+        android:id="@+id/messageImageGroup"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="5dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/icon_image_message_grey"/>
+
+    <TextView
+        android:id="@+id/timeUserChat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="textEnd"
+        android:text="Waktu"
+        android:layout_marginEnd="5dp"
+        android:textSize="12sp"/>
+
+</LinearLayout>

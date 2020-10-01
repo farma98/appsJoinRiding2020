@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ff5e57</color>
+    <color name="colorPrimaryDark">#ff3f34</color>
+    <color name="colorAccent">#ffffff</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorGreyLight">#dfe6e9</color>
+    <color name="colorGreyDark">#97999C</color>
+    <color name="colorYellow">#fdcb6e</color>
+
+    // Neutral streets theme's colors
+    <color name="colorPrimary_neutral">#E8E5E0</color>
+    <color name="colorPrimaryDark_neutral">#E8E5E0</color>
+    <color name="colorAccent_neutral">#FFFFFF</color>
+    <color name="navigationRouteLine_neutral">#00BAFF</color>
+    <color name="cardHourAndPhoneTextColor_neutral">#000000</color>
+</resources>
